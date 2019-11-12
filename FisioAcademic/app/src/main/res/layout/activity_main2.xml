@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Main2Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/main2ButtonAdicionar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:onClick="adicionarDados2"
+                android:text="Adicionar" />
+
+            <Button
+                android:id="@+id/main2ButtonVoltar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="voltar"
+                android:text="Retornar" />
+
+            <ListView
+                android:id="@+id/main2ListViewData"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_below="@id/main2ButtonAdicionar"></ListView>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
